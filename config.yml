@@ -3,7 +3,7 @@
 # - Defines the vCenter / vSphere environment
 deploy_vsphere_vcenter: 'photon-machine.contagion.local'
 deploy_vsphere_user: 'administrator@vsphere.local'
-deploy_vsphere_password: 'LolSaurus@1!'
+deploy_vsphere_password: ''
 deploy_vsphere_datacenter: 'Datacenter'
 deploy_vsphere_folder: 'deployments/CentOS'
 deploy_vsphere_cluster: ''
@@ -27,5 +27,5 @@ guest_state: 'poweredon'
 machine_group: 'machines'
 machine_user: 'user'
 machine_initial_user: 'root'
-machine_initial_password: 'P@ssw0rdP@ssw0rd'
+machine_initial_password: ''
 
