@@ -1,0 +1,5 @@
+[machines]
+centos-minio deploy_vsphere_datastore='vsanDatastore' guest_template='CentOS Stream' guest_custom_ip='' guest_notes='date'
+centos-worker-01 deploy_vsphere_datastore='vsanDatastore' guest_template='CentOS Stream' guest_custom_ip='' guest_notes='date'
+centos-worker-02 deploy_vsphere_datastore='vsanDatastore' guest_template='CentOS Stream' guest_custom_ip='' guest_notes='date'
+centos-server-01 deploy_vsphere_datastore='vsanDatastore' guest_template='CentOS Stream' guest_custom_ip='' guest_notes='date'

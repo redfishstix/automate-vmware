@@ -1,0 +1,15 @@
+---
+- name: Destroy a virtual machine
+  community.vmware.vmware_guest:
+    hostname: "{{ deploy_vsphere_vcenter }}"
+    username: "{{ deploy_vsphere_user }}"
+    password: "{{ deploy_vsphere_password }}"
+    datacenter: "{{ deploy_vsphere_datacenter }}"
+      #resource_pool: "{{ vcenter_resource_pool }}"
+    validate_certs: no
+    folder: "{{ deploy_vsphere_folder }}"
+    name: "{{ inventory_hostname }}"
+    state: absent
+    force: yes
+  delegate_to: localhost
+  register: destroy
